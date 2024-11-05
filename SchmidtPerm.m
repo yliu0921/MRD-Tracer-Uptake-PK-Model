@@ -6,7 +6,7 @@
 %%  Input and Outputs
 %   Input: Mol_R - molecular radius in [nm]
 %   Output: P - tumor capillary permeability  [cm/s]
-%   Assumptions: Fit parameters (ref 1) for two-pore model of the capillary wall
+%   Assumptions: Fit parameters for two-pore model of the capillary wall
 %%
 function P = SchmidtPerm(Mol_R)
 %Paine and Scherr look up values
@@ -27,7 +27,7 @@ PS = [0.60	11.14580;
       0.88	372.41035;
       0.90	737.25652]; 
 
-%Two-Pore Model of Capillary Wall Fit Parameters (ref 1)
+%Two-Pore Model of Capillary Wall Fit Parameters 
 Rsmall = 4.5;       % small capillary radius [nm]
 fasmall = 17.6;     % small capillary fractional area to thickness ratio [cm^-1]
 Rlarge = 500;       % large capillary radius [nm]
